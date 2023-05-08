@@ -20,3 +20,5 @@ El siguiente paso es descargar los archivos .zip, dependiendo del sistema que te
 <p align="center">
 <image src="/STR/images/Driver.png" alt="Instalacion del Driver" caption="Instalacion del Driver">
 </p>
+
+Una vez con todo el entrono instalado podemos conectar nuestro Robot Lego y será detectado tanto por nuestra máquina, como por la máquina virtual.
