@@ -8,6 +8,7 @@
   - Álvaro Ruza Bajo
 
 **Work Environment**
+
 Para comenzar con las prácticas de nuestro robot Lego tenemos que preparar un entorno de trabajo. Para ello entramos en el directorio *Entorno* y decargamos tanto el .dvi para poder instalar nuestra máquina virtual de Windows 7 (en mi caso he usador Virtual Box).
 
-<img src=
+<img src="/STR/images/Instalacion_MV.png" alt="Instalación Máquina Virtual">
