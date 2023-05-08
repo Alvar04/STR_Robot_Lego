@@ -5,3 +5,4 @@
   - Rafael Carlos Díaz Mata
   - Adolfo Fernández Gil
   - Juan Antonio Gálvez Jiménez
+  - Álvaro Ruza Bajo
