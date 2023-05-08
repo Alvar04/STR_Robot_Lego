@@ -18,7 +18,7 @@ Para comenzar con las prácticas de nuestro robot Lego tenemos que preparar un e
 El siguiente paso es descargar los archivos .zip, dependiendo del sistema que tengamos en nuestra máquina, en mi caso es el de Win64. Una vez descargado solo instalamos el driver de Lego. El driver se encuentra dentro de *OSEK-LEGO-Win64.zip* -> *NXT_64bit_driver.zip* -> *LegoMindstormsNXTdriver64.msi*.
 
 <p align="center">
-<image src="/STR/images/Driver.png" alt="Instalacion del Driver" caption="Instalacion del Driver">
+<image width=120px src="/STR/images/Driver.png" alt="Instalacion del Driver" caption="Instalacion del Driver">
 </p>
 
 Una vez con todo el entrono instalado podemos conectar nuestro Robot Lego y será detectado tanto por nuestra máquina, como por la máquina virtual.
