@@ -30,8 +30,8 @@ Para programar nuestro Robot usaremos las estructuras de datos que tenemos en el
 El primer paso para poder ejecutar nuestro programa en el Robot seguiremos estos pasos:
   1. Abrimos Cygwin, es decir, la terminal de Lego.
   2. Copiamos nuestro directorio de la practica 1 al directorio /nxtOSEX
-  3. Nos movemos al directorio /nxtOSEX/<nombre practica>.
-  4. Una vez en el directorio realizamos un **make clean** y un **make all*
-  5. Ejecutamos el script *./rxeflash.sh*
+  3. Nos movemos al directorio /nxtOSEX/"nombre practica".
+  4. Una vez en el directorio realizamos un **make clean** y un **make all**
+  5. Ejecutamos el script **./rxeflash.sh**
   
   
