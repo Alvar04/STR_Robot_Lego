@@ -1,13 +1,13 @@
 # STR_Robot_Lego
 
-**Authors**
+## Authors
   - Álvaro Palacios Criado
   - Rafael Carlos Díaz Mata
   - Adolfo Fernández Gil
   - Juan Antonio Gálvez Jiménez
   - Álvaro Ruza Bajo
 
-**Work Environment**
+## Work Enviromente
 
 Para comenzar con las prácticas de nuestro robot Lego tenemos que preparar un entorno de trabajo. Para ello entramos en el directorio *Entorno* y decargamos tanto el .dvi para poder instalar nuestra máquina virtual de Windows 7 (en mi caso he usador Virtual Box).
 
@@ -23,11 +23,11 @@ El siguiente paso es descargar los archivos .zip, dependiendo del sistema que te
 
 Una vez con todo el entrono instalado podemos conectar nuestro Robot Lego y será detectado tanto por nuestra máquina, como por la máquina virtual.
 
-**Programing**
+## Programing
   
 Para programar nuestro Robot usaremos las estructuras de datos que tenemos en el directorio ED, en pricipio usaremos la estructura de tipo 2. Tenemos que rellenar el fichero .cc y .oil.
   
-**Running**
+## Running
   
 El primer paso para poder ejecutar nuestro programa en el Robot seguiremos estos pasos:
   1. Abrimos Cygwin, es decir, la terminal de Lego.
