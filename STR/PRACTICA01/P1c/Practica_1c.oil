@@ -1,0 +1,106 @@
+Practica 1C.oil
+
+#include "implementation.oil"
+
+CPU ATMEL_AT91SAM7S256
+{
+	OS LEJOS_OSEK
+  	{
+    	STATUS = EXTENDED;
+    	STARTUPHOOK = FALSE;
+    	ERRORHOOK = FALSE;
+    	SHUTDOWNHOOK = FALSE;
+    	PRETASKHOOK = FALSE;
+    	POSTTASKHOOK = FALSE;
+    	USEGETSERVICEID = FALSE;
+    	USEPARAMETERACCESS = FALSE;
+    	USERESSCHEDULER = FALSE;
+  	};
+
+  APPMODE sample_appmode1{};
+
+  COUNTER Contador
+  {
+	MINCYCLE	= 1;
+	MAXALLOWEDVALUE	= 100000;
+	TICKSPERBASE	= 1;
+  };
+
+  ALARM AlarmaDistancia
+  {
+	COUNTER		= Contador;
+	ACTION		= ACTIVATETASK {
+	    TASK 	= ReducirVelocidad;
+	};
+	AUTOSTART	= TRUE {
+	    ALARMTIME 	= 23;
+	    CYCLETIME	= 200;
+	    APPMODE	= sample_appmode1;
+	};
+  };
+
+	ALARM AlarmaColision
+	{
+	COUNTER		= Contador;
+	ACTION		= ACTIVATETASK {
+	    TASK 	= ComprobarColision;
+	};
+	AUTOSTART	= TRUE {
+	    ALARMTIME 	= 67;
+	    CYCLETIME	= 200;
+	    APPMODE	= sample_appmode1;
+	};
+  };
+
+	EVENT Colision{
+		MASK = AUTO;
+	};
+
+	TASK ComprobarColision
+	{
+		AUTOSTART = FALSE;
+		PRIORITY 	= 4;
+		ACTIVATION 	= 1;
+		SCHEDULE 	= FULL;
+		STACKSIZE 	= 512;
+	};
+
+  TASK Avance
+  {
+    	AUTOSTART = TRUE
+		{
+    		APPMODE = sample_appmode1;
+    	};
+    	PRIORITY 	= 1;
+    	ACTIVATION 	= 1;
+    	SCHEDULE 	= FULL;
+    	STACKSIZE 	= 512;
+		EVENT=Colision;
+  };
+
+  TASK Retroceso
+  {
+        AUTOSTART 	= FALSE;
+    	PRIORITY 	= 5;
+    	ACTIVATION 	= 1;
+    	SCHEDULE 	= FULL;
+    	STACKSIZE 	= 512;
+  };
+
+	TASK ReducirVelocidad
+	{
+		AUTOSTART=FALSE;
+		PRIORITY=3;
+		ACTIVATION=1;
+		SCHEDULE=FULL;
+		STACKSIZE=512;
+	};
+	   TASK Final
+   {
+    	AUTOSTART = FALSE;
+        PRIORITY 	= 10;
+        ACTIVATION 	= 1;
+        SCHEDULE 	= FULL;
+        STACKSIZE 	= 512;
+   };
+};
