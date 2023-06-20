@@ -30,7 +30,7 @@ Para programar nuestro Robot usaremos las estructuras de datos que tenemos en el
 ## Running
   
 Para poder ejecutar nuestro programa en el Robot, primero conectamos el USB y seguiremos estos pasos:
-  1. Abrimos Cygwin, es decir, la terminal de Lego.
+  1. Abrimos Cygwin, es decir, la terminal de Lego (como Administrador).
   2. Copiamos nuestro directorio de la practica 1 al directorio /nxtOSEX
   3. Nos movemos al directorio /nxtOSEX/"nombre practica".
   4. Una vez en el directorio realizamos un **make clean** y un **make all**
